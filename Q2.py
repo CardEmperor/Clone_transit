@@ -80,7 +80,16 @@ def bidirectional_dij(source: int, destination: int, graph_object) -> int:
                     update(back, cur_dist, goal_source)
 
     return []
-
+    def distance(G, path):
+    dist = 0.0
+    tot_v = len(path) -1  #Total Number of Vertex minus 1
+    for i in range(tot_v):
+        dist += G[path[i]][path[i + 1]]['weight']
+    return dist
+    
+    shortest_path_distance = distance(G_to_dict, bi_path)
+    
+    
         return shortest_path_distance
     except:
         return shortest_path_distance
