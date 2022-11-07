@@ -90,6 +90,6 @@ def bidirectional_dij(source: int, destination: int, graph_object) -> int:
     shortest_path_distance = distance(graph_object_to_dict, bi_path)
     
     
-        return shortest_path_distance
-    except:
-        return shortest_path_distance
+      return shortest_path_distance
+   except:
+      return shortest_path_distance
