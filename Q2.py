@@ -81,14 +81,14 @@ def bidirectional_dij(source: int, destination: int, graph_object) -> int:
 
     return []
     def distance(graph_object, path):
-    dist = 0.0
-    tot_v = len(path) -1  #Total Number of Vertex minus 1
-    for i in range(tot_v):
-        dist += graph_object[path[i]][path[i + 1]]['weight']
-    return dist
-    
-    shortest_path_distance = distance(graph_object_to_dict, bi_path)
-    
+        dist = 0.0
+        tot_v = len(path) -1  #Total Number of Vertex minus 1
+        for i in range(tot_v):
+            dist += graph_object[path[i]][path[i + 1]]['weight']
+        return dist
+
+        shortest_path_distance = distance(graph_object_to_dict, bi_path)
+
     
        return shortest_path_distance
     except:
